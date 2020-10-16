@@ -32,8 +32,18 @@ body {
     max-width: 120rem;
     padding: 0 1.5rem;
     margin: 0 auto;
-
  }
+ .btn {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .5rem 3.5rem;
+    border: none;
+    border-radius: 10rem;
+    display: inline-flex;
+    align-items: center;
+}
 
  /* header */
  .header {
@@ -85,7 +95,6 @@ body {
     justify-content: center;
     align-items: center;
     color: ivory;
-    /* z-index: ; */
     opacity: 0;
     transform: scale(0);
 }
@@ -104,3 +113,54 @@ body {
     padding: 1rem;
 }
 
+/* hero section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url(/images/hero_background.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: inherit;
+    height: inherit;
+    background: var(--purple-transparent-alt);
+    z-index: -1;
+}
+.main_heading { 
+color: #fff;
+text-transform: uppercase;
+font-weight: bold;
+line-height: 1;
+text-shadow: 1px 1px 1rem rgba(0,0,0,.5);
+margin-bottom: 2.5rem;
+}
+
+.title {
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.subtitle {
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-family: 'Courgette',cursive;
+}
+
+.btn_gradient {
+    background-image: var(--gradient-color);
+}
+.btn_gradient:hover {
+    background-image: var(--gradient-color-alt);
+}
+.dots {
+    font-size: 2.4rem;
+    margin-left: .5rem;
+    opacity: .75;
+}
