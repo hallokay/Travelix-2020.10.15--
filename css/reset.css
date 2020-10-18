@@ -27,6 +27,10 @@ body,input,textarea,table,button,select {
     line-height: 1.5; 
  }
 
+ /* input place holder */
+ ::placeholder {
+    color: inherit;
+}
 /*폰트 스타일 초기화*/
 em ,address {
     font-style: normal;
@@ -39,7 +43,7 @@ dl,ul,li,ol,menu{
 }
 /* 이미지 비디오 */
 img, video{
-    /* width: 100%; */
+    width: 100%;
 }
 
 /*제목 초기화*/
