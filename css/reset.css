@@ -25,6 +25,7 @@ body,input,textarea,table,button,select {
     /* font-size: 13px;  */
     color: inherit; 
     line-height: 1.5; 
+    border: none;
  }
 
  /* input place holder */
