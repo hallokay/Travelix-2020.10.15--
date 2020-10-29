@@ -516,5 +516,79 @@ body {
 }   
 
 @media (min-width:1000px){
-    
+    section:not(.booking) {
+        padding: 10rem 0;
+    }
+    /* header */
+    .hamburger_btn {
+        display: none;
+    }
+    .nav_list {
+        position: initial;
+        width: initial;
+        height: initial;
+        background: transparent;
+        flex-direction: row;
+        justify-content: initial;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .nav_item:not(:last-child) {
+        margin-right: 3rem;
+        margin-bottom: 0;
+    }
+    .nav_link {
+       font-weight: normal;
+       font-size: 1.3rem;
+       transition: all .5s; 
+    }
+
+    /* hero */
+    .title {
+        font-size: 10rem;
+    }
+    .subtitle {
+        font-size: 4.6rem;
+    }
+
+    /* booking */
+    .book_form {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+    }
+    .book_form .input_group {
+        margin-bottom: 0;
+    }
+    .book_form .input_group:first-child {
+        flex:0 0 20%;
+    }
+    .input,
+    .options {
+        min-width: 10rem;
+    }
+
+    /* rooms */
+    .rooms_grid {
+        grid-template-columns: repeat(auto-fit, minmax(40rem,1fr));
+        grid-gap: 6rem;
+    }
+    .featured_rooms {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .img_wrap {
+        width: 150rem;
+    }
+    .room_info_wrap {
+        margin-left: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .book_form .input_group:first-child {
+        flex:0 0 30%;
+    }
 }
